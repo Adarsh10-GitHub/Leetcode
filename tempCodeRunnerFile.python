@@ -1,0 +1,11 @@
+
+arr1 = [1,-2,-5,0,10]
+arr2 = [0,-2,-1,-7,-4]
+maxm=0
+n=len(arr1)
+for i in range(n):
+    for j in range(i+1,n):
+        ans=abs(arr1[i]-arr1[j]) + abs(arr2[i]-arr2[j]) + abs(i-j)
+        if ans>maxm:
+            maxm=ans
+print(maxm)
